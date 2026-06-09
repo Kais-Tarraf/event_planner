@@ -33,7 +33,7 @@ export default function RootLayout({
 		>
 			<body
 				className="min-h-full flex flex-col 
-      bg-background text-foreground"
+      	bg-background text-foreground"
 			>
 				<NeonAuthUIProvider authClient={authClient as any}>
 					<header
@@ -46,7 +46,10 @@ export default function RootLayout({
 							</Link>
 							<nav className="flex items-center gap-4">
 								<Link href={"/dashboard"}>Dashboard</Link>
-								<UserButton size="icon" />
+								<UserButton
+									size="icon"
+									
+								/>
 							</nav>
 						</div>
 					</header>
